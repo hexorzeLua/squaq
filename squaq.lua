@@ -718,9 +718,11 @@ function Kavo.CreateLib(kavName, themeList)
                             focusing = false
                         end
                         Utility:TweenObject(blurFrame, {BackgroundTransparency = 1}, 0.2)
+                        end
                     end
                 end)
                 local hovering = false
+
                 btn.MouseEnter:Connect(function()
                     if not focusing then
                         game.TweenService:Create(btn, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
